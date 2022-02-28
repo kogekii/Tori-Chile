@@ -1,0 +1,246 @@
+*{
+    scroll-behavior: smooth;
+    font-family:  'Trocchi', serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    margin: 0;
+    background-image: url("image/fondo.png");
+    background-repeat: no-repeat;
+}
+    body::-webkit-scrollbar {
+        width: 7px;
+    }
+    body::-webkit-scrollbar-thumb {
+    background-color: #40A170;
+    border-radius: 5px;
+    }
+
+
+header{
+    position: fixed;
+    background-color: #004120;
+    max-width: 100%;
+    width: 100%;
+    padding: 30px;
+    top: 0;
+    display: block;
+    z-index: 1;
+    box-shadow: 0 0 10px 0;
+}
+
+header img{
+    width: 5%;
+    display: inline-block;
+}
+    header img:hover{
+        transition: transform 0.5s;
+        transform: rotate(-0.125turn);
+    }
+header nav{
+    display: inline-block;
+    width: 50%;
+}
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        width: 80%;
+        list-style: none;
+        position: fixed;
+        top: 0;
+        margin-top: 2%;
+    }
+    .menu li{
+        width: auto;
+        text-align: center;
+    }
+
+    #search{
+        width: 33.3%;
+    }
+    .menu li a{
+        color: white;
+    }
+        .submenu-categoria{
+            list-style: none;
+            display: none;
+            position: absolute;
+            margin: 10px;
+            padding: 0;
+            background-color: #004120;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .submenu-categoria li{
+            margin: 30px 0;
+        }
+       .menu li:hover .submenu-categoria{
+           display: block;
+       }
+    .menu li a{
+        border-radius: 25px;
+        padding: 10px;
+    }
+    .menu li a:hover{
+        background-color: #008140;
+    }
+    .menu input{
+        border-radius: 30px;
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+        border: none;
+    }
+
+
+
+
+#titulo{
+    color: #004120;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+
+section{
+    margin-top: 15rem;
+    margin-bottom: 10vh;
+}
+
+.tienda{
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.tienda img{
+    width: 250px;
+    border-radius: 25px;
+    padding: 5px 5px;
+}
+
+.tienda button{
+    text-align: center;
+}
+.producto{
+    border: black solid 1px;
+    display: inline-block    ;
+    border-radius: 10px;
+    width: 260px;
+    height: 400px;
+    margin: 10px 40px;
+    background-color: #fefffe;
+}
+ .producto:hover{
+     transition: transform 0.5s;
+     transform: scale(1.2);
+     box-shadow: 0 5px 5px 0;
+     
+ }
+
+
+span{
+    color: black;
+}
+footer{
+    clear: both;
+    background-color: #004120;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 10px 0 0 0;
+}
+
+
+.main-conteiner{
+    max-width: 100%;
+}
+.main-conteiner h1{
+    font-size: 3.2rem;
+}
+.item-precio{
+    font-size: 4rem;
+}
+.item{
+    width: auto;
+    max-width: 70%;
+    width: 70%;
+    border-width: 0 0 5px 5px;
+    border-color: black;
+    border-style: groove;
+    border-radius: 25px;
+    padding: 30px;
+    background-color: #40A170;
+    margin: auto;
+}
+.item img{
+    max-width: 50%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.item .info{
+    display: inline-block;
+    max-width: 50%;
+    width: 40%;
+    height: auto;
+    margin: 30px;
+}
+
+.info button{
+    width: 40%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 15px;
+    background-color: #A1A040;
+    color: white;
+    border-width: 0 0 2px 2px;
+}
+
+.info button:hover{
+    background-color: black;
+}
+
+.descripcion{
+    max-width: 70%;
+    text-align: left;
+    margin: 40px auto;
+    border-radius: 25px;
+    padding: 30px;
+    border: 1px solid black;
+    background-color: #008140;
+}
+
+.descripcion table, .descripcion td{
+    border: 1px solid black;
+    border-spacing: 0;
+    background-color: white;
+}
+
+.descripcion td{
+    padding: 5px;
+}
+
+button.color{
+    width: 10%;
+    border-radius: 100%;
+}
+    button.color:hover{
+        transition: transform 0.5s;
+        transform: scale(1.2);
+    }
+
+#pink{
+    background-color: pink;
+}
+#black{
+    background-color: black;
+}
+#white{
+    background-color: white;
+}
